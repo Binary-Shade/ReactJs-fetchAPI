@@ -4,16 +4,13 @@ import Cell from './Cell'
 const Row = (items) => {
   return (
     <tr>
-        {Object.entries(items).map((key, value)=>{
+        {Object.entries(items).map(([key, value]) => {
             return (
-                <Cell
-                    key={key}
-                    cellData={JSON.stringify(value)}
-                />
+                <Cell key={key} cellData={JSON.stringify(value)} />
             )
         })}
     </tr>
-  )
+)
 }
 
 export default Row

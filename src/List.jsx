@@ -1,9 +1,9 @@
 import React from 'react'
 
-const List = ({item}) => {
+const List = ({item, key}) => {
   return (
     <li>
-        {item}
+      {JSON.stringify(item)}
     </li>
   )
 }

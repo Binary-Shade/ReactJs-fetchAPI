@@ -15,7 +15,6 @@ function App() {
         const response = await fetch(`${API}${url}`)
         const data = await response.json()
         setItem(data)
-        console.log(data);
       }
       catch(err){
         console.error(err)
@@ -36,9 +35,9 @@ function App() {
       <Table 
         items = {items}
       />
-      <Content
+      {/* <Content
         items={items}
-      />
+      /> */}
     </div>
   )
 }
